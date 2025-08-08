@@ -1,6 +1,7 @@
 {
-  "name": "lastfm-helper",
+  "name": "song",
   "version": "1.0.0",
+  "description": "Nightbot command server for the song played currently",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -9,6 +10,9 @@
   "dependencies": {
     "express": "^4.18.2",
     "node-fetch": "^3.3.2"
+  },
+  "engines": {
+    "node": ">=18"
   },
   "license": "MIT"
 }
