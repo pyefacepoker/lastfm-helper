@@ -3,8 +3,8 @@ import fetch from "node-fetch";
 
 const app = express();
 
-const username = "pyefacepoker"; // Your Last.fm username
-const apiKey = process.env.6cfbe5adae402ea8ad1d5656cb6faf86; // We'll set this in Railway secrets
+const username = "pyefacepoker"; // Replace with your Last.fm username
+const apiKey = process.env.LASTFM_API_KEY; // We'll add this on Render
 
 async function getRecentTracks(limit = 2) {
   const url = `https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${username}&api_key=${apiKey}&format=json&limit=${limit}`;
